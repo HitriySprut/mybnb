@@ -31,7 +31,7 @@
         },
         1200: {
           nav: true,
-          items: 2
+          items: 3
         },
       }
     });
@@ -102,9 +102,18 @@
       }
     });
   }
-  $(document).ready(function() {
+  /*$(document).ready(function() {
     $('select').niceSelect();
-  });
+
+
+  });*/
+  $( function() {
+    $("#start_datepicker").datepicker();
+    $("#end_datepicker").datepicker();
+  } );
+
+
+
   // menu fixed js code
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
